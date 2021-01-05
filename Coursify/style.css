@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding: 0;
+    text-align: left ;
+    box-sizing: border-box;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+body{
+    text-align: left;
+}
+main{
+    padding-top:80px ;
+}
+h2{
+    padding-top: 1em;
+}
+.bannerLeft{
+padding-top: 80px;
+}
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+.navbar{
+    background-color: #1c2e4a;
+    color: turquoise !important;
+}
+.navbar span{
+    font-weight: bold;
+    font-size: large;
+}
+.navbar .btn{
+    color: #1c2e4a;
+    font-weight: 700;
+    background-color: turquoise;
+}
+.nav-link{
+    color: turquoise!important ;
+}
+main{
+    background-color: snow;
+}
+#websiteBanner{
+    text-align: left;
+}
+#searchBar{
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+.bannerLeft {
+    padding-top:40px:
+}
+#benfits .card{
+    background-color: #e2ecf8;
+    color: black;
+}
+#studyMaterial img{
+    height: 1.3rem;
+}
+
+#studyMaterial  a{
+ color: black;
+ text-align: center;
+ background-color: #e2ecf8;
+ text-decoration: none;
+ padding: 0.7rem 0;
+}
+#studyMaterial .col{
+    line-height: 40px;
+}
+#subjects a{
+    width: 200px;
+}
+
+#review ul{
+    list-style: none;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+#review .author-name{
+    font-size: 1rem;
+}
+footer{
+    background-color: #1c2e4a;
+    color: turquoise;
+    padding: .7em 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px ) and (min-width:767px){
+    .bannerLeft{
+    padding:20px 0 40px;
+    }    
+    #subjects a{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    *{
+        text-align: center;
+    }
+    #websiteBanner #searchBar{
+        display: inline-block;
+        width: 70vw;
+        vertical-align: middle;
+    }
+    .bannerLeft{
+    padding: 30px 0 50px;
+    }
+    #exams #badge{
+        margin-top: 10px;
+        width: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 576px){
+    #exams #badge{
+        width: fit-content;
+    }
+    
+}

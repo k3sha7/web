@@ -1,0 +1,93 @@
+<!doctype html>
+    <head>
+        <title>tecch doc</title>
+        <link type:"css" rel="stylesheet" href="style.css">
+    </head>
+    <body class="main-body">
+        <nav id="navbar" class="">
+            <header>Web development</header>
+            <a class="nav-link" href="#Web_development">Web development</a>
+            <a class="nav-link" href="#HTML">HTML</a>
+            <a class="nav-link" href="#CSS">CSS</a>
+            <a class="nav-link" href="#JS">JS</a>
+            <a class="nav-link" href="#SQL">SQL</a>
+        </nav>
+        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+        <main id="main-doc">
+<section id="Web_development" class="main-section">
+    <header>Web development</header>
+    <p>Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience.
+
+        Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are preforming and the platforms on which they are working.</p>
+    <p>Web development skills are in high demand worldwide and well paid too – making development a great career option. It is one of the easiest accessible higher paid fields as you do not need a traditional university degree to become qualified.
+
+        The field of web development is generally broken down into :</p>
+    <ul>
+        <li>Front-End</li>
+        <li>Back-End</li>
+        <li>Full-Stack</li>
+    </ul>
+    <p>Programs used for web development are :</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>SQL</li>
+    </ul>
+</section>
+<section id="HTML" class="main-section">
+    <header>HTML</header>
+    <p>Stands for "Hypertext Markup Language." HTML is the language used to create webpages. "Hypertext" refers to the hyperlinks that an HTML page may contain. "Markup language" refers to the way tags are used to define the page layout and elements within the page.</p>
+    <p>Below is an example of HTML used to define a basic webpage with a title and a single paragraph of text</p>
+    <code><span class="command">&lt;!doctype html&gt;</span><br>
+        <span class="command">&lt;html&gt;</span><br>
+        <span class="command">&lt;head&gt;</span><br>
+        <span class="command">&lt;title&gt;</span>TechTerms.com<span class="command">&lt;/title&gt;</span><br>
+        <span class="command">&lt;/head&gt;</span><br>
+        <span class="command">&lt;body&gt;</span><br>
+        <span class="command">&lt;p&gt;</span>This is an example of a paragraph in HTML.<span class="command">&lt;/p&gt;</span><br>
+        <span class="command">&lt;/body&gt;</span><br>
+        <span class="command">&lt;/html&gt;</span><br><br></code>
+</section>
+<section id="CSS" class="main-section">
+    <header>CSS</header>
+    <p>Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.</p>
+    <p>CSS helps Web developers create a uniform look across several pages of a Web site. Instead of defining the style of each table and each block of text within a page's HTML, commonly used styles need to be defined only once in a CSS document. Once the style is defined in cascading style sheet, it can be used by any page that references the CSS file.</p>
+    <code>body {<br>
+                    background-color: powderblue;<br>
+                }<br>
+      h1 {<br>
+        color: blue;<br>
+             }<br>
+      p {<br>
+             color: red;<br>
+        }<br><br></code>
+</section>
+<section id="JS" class="main-section">
+    <header>JS</header>
+    <p>avaScript is a programming language commonly used in web development. It was originally developed by Netscape as a means to add dynamic and interactive elements to websites. While JavaScript is influenced by Java, the syntax is more similar to C and is based on ECMAScript, a scripting language developed by Sun Microsystems.</p>
+    <p>JavaScript is a client-side scripting language, which means the source code is processed by the client's web browser rather than on the web server. This means JavaScript functions can run after a webpage has loaded without communicating with the server. For example, a JavaScript function may check a web form before it is submitted to make sure all the required fields have been filled out. The JavaScript code can produce an error message before any information is actually transmitted to the server.</p>
+    <code><span class="command">&lt;script&gt;</span><br>
+        <span class="command">&nbsp; function sum(a,b)</span><br>
+        <span class="command">&nbsp; {</span><br>
+        <span class="command">&nbsp; &nbsp; return a + b;</span><br>
+        <span class="command">&nbsp; }</span><br>
+        <span class="command">&nbsp; var total = sum(7,11);</span><br>
+        <span class="command">&nbsp; alert(total);</span><br>
+        <span class="command">&lt;/script&gt;<br></span></code>
+</section>
+<section id="SQL" class="main-section">
+    <header>SQL</header>
+    <p>Stands for "Structured Query Language," and can be pronounced as either "sequel" or "S-Q-L." It is a query language used for accessing and modifying information in a database. Some common SQL commands include "insert," "update," and "delete." The language was first created by IBM in 1975 and was called SEQUEL for "Structured English Query Language." Since then, it has undergone a number of changes, many coming from Oracle products.</p>
+    <p>Today, SQL is commonly used for Web database development and management. Though SQL is now considered to be a standard language, there are still a number of variations of it, such as mSQL and mySQL. By using a scripting language like PHP, SQL commands can be executed when a Web page loads. This makes it possible to create dynamic Web pages that can display different information each time they load.</p>
+    <code>SELECT * FROM Customers<br>
+        WHERE CustomerID=1;</code>
+        <code>UPDATE table_name<br>
+            SET column1 = value1, column2 = value2, ...<br>
+            WHERE condition;</code><br><br>
+</section>
+<script defer src="index.js"></script>
+<button id="switch"> <img src="https://image.flaticon.com/icons/svg/3127/3127122.svg" width="30px"> </button>     
+  </main>
+    </body>
+</html>

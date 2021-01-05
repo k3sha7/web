@@ -1,0 +1,68 @@
+
+.main-body {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "navbar mainContent";
+}
+ .dark{
+  background-color: black;
+  color:white;
+  
+}
+#navbar {
+  grid-area: navbar;
+}
+nav{
+  position: fixed;
+}
+.dark a{
+  background:gray;
+}
+ a {
+  display: block;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+#navbar a:hover{
+  background-color: #ccc;
+}
+#main-doc {
+  grid-area: mainContent;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 10mm;
+}
+
+code {
+  font-size: 1.2em;
+  background-color: rgba(193, 194, 193,0.5);
+  padding: 10px;
+  padding-left:20px ;
+  display: block;
+  line-height: 1.3rem;
+}
+#switch{
+  padding: 7px;
+  position: fixed; 
+  bottom:1em;
+  border-radius: 50%;
+  left: 1em;
+ background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .main-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" "mainContent";
+  }
+    nav#navbar {
+    position: inherit;
+  }
+}

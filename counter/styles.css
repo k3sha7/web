@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background-color: rgb(206, 229, 238);
+    font-family: Helvetica, sans-serif;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+.c{
+    display: inline-block;
+    padding: 15rem 0;
+    overflow: hidden;
+}
+.btn{
+    background: transparent;
+    transition: 0.5ms;
+    border: 2px solid black;
+    padding: 0.5rem;
+    margin:0 .5rem ;
+    border-radius: 5px;
+    
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.btn:active{
+    border: 2px solid yellow;
+}
